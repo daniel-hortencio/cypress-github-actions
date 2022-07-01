@@ -8,7 +8,7 @@ describe("Test", () => {
       .type('123')
 
     cy.get('[data-cy="p"]')
-      .contains('123')
+      .contains('123456789')
 
   })
 })

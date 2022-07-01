@@ -1,15 +1,16 @@
-name: ci
 
-on: pull_request
-
-jobs: 
-  cypress:
+name: Cypress e2e test
+on: [push]
+jobs:
+  test-e2e:
     runs-on: ubuntu-latest
-    steps: 
-      - uses: actions/checkout@v2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.2
+      - name: Cypress.io
+        uses: cypress-io/github-action@v4.1.1
         with:
           fetch-depth: 0
       - run: npm i
       - run: npm start &
       - run: npm test-e2e
-

@@ -12,6 +12,8 @@ const Home: NextPage = () => {
         onChange={(e) => setInput(e.target.value)}
       />
       <p data-cy="p">{input}</p>
+
+      <button>Botão</button>
     </div>
   );
 };

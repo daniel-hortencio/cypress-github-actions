@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe("Test", () => {
-  it("funciona", () => {
+  it("ta funcionando!", () => {
     cy.visit('/')
       .wait(20)
       .get('[data-cy="input"]')

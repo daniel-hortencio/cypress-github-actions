@@ -1,6 +1,9 @@
 
 name: Cypress e2e test
-on: [push]
+on: 
+  push:
+      branches:
+        - master
 jobs:
   test-e2e:
     runs-on: ubuntu-latest

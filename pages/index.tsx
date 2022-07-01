@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       />
       <p data-cy="p">{input}</p>
 
-      <button>Botão</button>
+      <button>Botão Editado</button>
     </div>
   );
 };

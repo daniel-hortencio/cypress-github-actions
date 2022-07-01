@@ -12,5 +12,5 @@ jobs:
       - name: Cypress.io
         uses: cypress-io/github-action@v4.1.1
       - run: npm i
-      - run: npm start &
+      - run: npm dev &
       - run: npm test-e2e
